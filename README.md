@@ -1,1 +1,2 @@
-# enums
+# Enumerated Types (and Extension Methods)
+
