@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using EnumLibrary;
 
 namespace EnumConsole
@@ -18,6 +14,8 @@ namespace EnumConsole
             Console.ReadKey();
             Casting();
             Console.ReadKey();
+            Names();
+            Console.ReadKey();
             IteratingFlags();           
             Console.ReadKey();
             ExtensionMethods();
@@ -26,7 +24,7 @@ namespace EnumConsole
 
         static void AssignPrintIncrement()
         {
-            Months myMonth = Months.August;
+            Months myMonth = Months.July;
             Console.WriteLine("{0}", myMonth);
             myMonth++;
             Console.WriteLine("{0}", myMonth);
@@ -61,6 +59,7 @@ namespace EnumConsole
             Months mo = Months.January;
             int i = (int)mo;
             mo++;
+            Console.WriteLine(mo.ToString());
 
             for (int mc = 0; mc < 24; mc++)
             {
